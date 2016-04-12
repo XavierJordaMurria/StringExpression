@@ -1,0 +1,2 @@
+# StringExpression
+This app evaluates a string expression consisting of positive integers and the +, -, /,* operands only,taking into account normal mathematical rules of operator precedence. No brackets or support for input variables is required.\nFor example:\nan input string of '4+5*2' should output 14\nan input string of '4+5/2' should output 6.5\nan input string of '4+5/2-1' should output 5.5"
