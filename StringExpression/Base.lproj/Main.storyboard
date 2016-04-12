@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="String Expression Evaluation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JI-yR-bEV" userLabel="title">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="28" width="353" height="61"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Introduce your string expression" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gXp-7A-uI2" userLabel="strExpression">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="textColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="163" width="360" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emz-aU-NQu" userLabel="result">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="143" y="243" width="114" height="102"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXd-Hu-xE0" userLabel="evaluateBt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Evaluate"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="167" y="461" width="66" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="evaluateBt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qu1-X2-cnn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ1-pp-i6g" userLabel="infoBt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <connections>
+                                    <action selector="infoBt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlC-73-lCv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MZ1-pp-i6g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6vn-bB-mZ5">
+                                <variation key="widthClass=compact" constant="281"/>
+                            </constraint>
+                            <constraint firstItem="MZ1-pp-i6g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ikS-GE-Gwe">
+                                <variation key="widthClass=compact" constant="169"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7JI-yR-bEV"/>
+                                <exclude reference="gXp-7A-uI2"/>
+                                <exclude reference="Emz-aU-NQu"/>
+                                <exclude reference="kXd-Hu-xE0"/>
+                                <exclude reference="MZ1-pp-i6g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6vn-bB-mZ5"/>
+                                <exclude reference="ikS-GE-Gwe"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7JI-yR-bEV"/>
+                                <include reference="gXp-7A-uI2"/>
+                                <include reference="Emz-aU-NQu"/>
+                                <include reference="kXd-Hu-xE0"/>
+                                <include reference="MZ1-pp-i6g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6vn-bB-mZ5"/>
+                                <include reference="ikS-GE-Gwe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="result" destination="Emz-aU-NQu" id="cRG-0G-GI5"/>
+                        <outlet property="str_expression" destination="gXp-7A-uI2" id="wAb-ub-W3D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="357"/>
+        </scene>
+    </scenes>
+</document>
