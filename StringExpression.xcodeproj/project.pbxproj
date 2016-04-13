@@ -13,8 +13,6 @@
 		3619BBE41CBCE2120094442B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3619BBE21CBCE2120094442B /* Main.storyboard */; };
 		3619BBE61CBCE2120094442B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3619BBE51CBCE2120094442B /* Assets.xcassets */; };
 		3619BBE91CBCE2120094442B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3619BBE71CBCE2120094442B /* LaunchScreen.storyboard */; };
-		3619BBF41CBCE2120094442B /* StringExpressionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3619BBF31CBCE2120094442B /* StringExpressionTests.m */; };
-		3619BBFF1CBCE2120094442B /* StringExpressionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3619BBFE1CBCE2120094442B /* StringExpressionUITests.m */; };
 		3619BC0D1CBCE3140094442B /* EvaluateExpressionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3619BC0C1CBCE3140094442B /* EvaluateExpressionModel.m */; };
 /* End PBXBuildFile section */
 
@@ -47,11 +45,7 @@
 		3619BBE81CBCE2120094442B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3619BBEA1CBCE2120094442B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3619BBEF1CBCE2120094442B /* StringExpressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringExpressionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3619BBF31CBCE2120094442B /* StringExpressionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringExpressionTests.m; sourceTree = "<group>"; };
-		3619BBF51CBCE2120094442B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3619BBFA1CBCE2120094442B /* StringExpressionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringExpressionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3619BBFE1CBCE2120094442B /* StringExpressionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringExpressionUITests.m; sourceTree = "<group>"; };
-		3619BC001CBCE2120094442B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3619BC0C1CBCE3140094442B /* EvaluateExpressionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluateExpressionModel.m; sourceTree = "<group>"; };
 		3619BC0E1CBCE3270094442B /* EvaluateExpressionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvaluateExpressionModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				3619BBD81CBCE2120094442B /* StringExpression */,
-				3619BBF21CBCE2120094442B /* StringExpressionTests */,
-				3619BBFD1CBCE2120094442B /* StringExpressionUITests */,
 				3619BBD71CBCE2120094442B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,24 +117,6 @@
 				3619BBDA1CBCE2120094442B /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3619BBF21CBCE2120094442B /* StringExpressionTests */ = {
-			isa = PBXGroup;
-			children = (
-				3619BBF31CBCE2120094442B /* StringExpressionTests.m */,
-				3619BBF51CBCE2120094442B /* Info.plist */,
-			);
-			path = StringExpressionTests;
-			sourceTree = "<group>";
-		};
-		3619BBFD1CBCE2120094442B /* StringExpressionUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3619BBFE1CBCE2120094442B /* StringExpressionUITests.m */,
-				3619BC001CBCE2120094442B /* Info.plist */,
-			);
-			path = StringExpressionUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3619BBF41CBCE2120094442B /* StringExpressionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3619BBFF1CBCE2120094442B /* StringExpressionUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
